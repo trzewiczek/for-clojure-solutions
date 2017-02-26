@@ -71,3 +71,14 @@
 ;; Problem 31
 (defn pack-a-sequence [xs]
   (partition-by identity xs))
+
+
+;; Problem 32
+(defn duplicate-a-sequence [xs]
+  (when-let [[head & tail] xs]
+    (conj (duplicate-a-sequence tail) head head)))
+
+
+;; Problem 33
+(defn replicate-a-sequence [xs n]
+  (->> xs (map #(repeat n %)) (apply concat)))

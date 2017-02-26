@@ -102,6 +102,24 @@
     (is (= (pack-a-sequence [1 1 2 1 1 1 3 3]) '((1 1) (2) (1 1 1) (3 3))))
     (is (= (pack-a-sequence [:a :a :b :b :c]) '((:a :a) (:b :b) (:c))))
     (is (= (pack-a-sequence [[1 2] [1 2] [3 4]]) '(([1 2] [1 2]) ([3 4])))))
+
+
+  ;; Problem 32
+  (testing "Duplicate a Sequence"
+    (is (= (duplicate-a-sequence [1 2 3]) '(1 1 2 2 3 3)))
+    (is (= (duplicate-a-sequence [:a :a :b :b]) '(:a :a :a :a :b :b :b :b)))
+    (is (= (duplicate-a-sequence [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4])))
+    (is (= (duplicate-a-sequence [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4]))))
+
+
+
+  ;; Problem 33
+  (testing "Replicate a Sequence"
+    (is (= (replicate-a-sequence [1 2 3] 2) '(1 1 2 2 3 3)))
+    (is (= (replicate-a-sequence [:a :b] 4) '(:a :a :a :a :b :b :b :b)))
+    (is (= (replicate-a-sequence [4 5 6] 1) '(4 5 6)))
+    (is (= (replicate-a-sequence [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])))
+    (is (= (replicate-a-sequence [44 33] 2) [44 44 33 33])))
 )
 
 
