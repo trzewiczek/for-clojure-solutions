@@ -2,6 +2,6 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Just in case someone hit the run road"
   [& args]
-  (println "Hello, World!"))
+  (println "Better go with: lein test"))
