@@ -82,3 +82,11 @@
 ;; Problem 33
 (defn replicate-a-sequence [xs n]
   (->> xs (map #(repeat n %)) (apply concat)))
+
+
+;; Problem 34
+(defn implement-range [a b]
+  (if (= a b)
+    '()
+    (cons a (implement-range (inc a) b))))
+

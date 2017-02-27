@@ -120,6 +120,13 @@
     (is (= (replicate-a-sequence [4 5 6] 1) '(4 5 6)))
     (is (= (replicate-a-sequence [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])))
     (is (= (replicate-a-sequence [44 33] 2) [44 44 33 33])))
+
+
+  ;; Problem 34
+  (testing "Implement range"
+    (is (= (implement-range 1 4) '(1 2 3)))
+    (is (= (implement-range -2 2) '(-2 -1 0 1)))
+    (is (= (implement-range 5 8) '(5 6 7))))
 )
 
 
